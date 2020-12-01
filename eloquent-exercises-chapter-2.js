@@ -1,4 +1,4 @@
-// Eloquent JavaScript Exercises
+// Eloquent JavaScript Exercises - Chapter 2
 
 /*
  ,_,
