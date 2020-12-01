@@ -1,4 +1,6 @@
-// Eloquent JavaScript Exercises - Chapter 2
+// Eloquent JavaScript Exercises
+
+// CHAPTER 2: PROGRAM STRUCTURE
 
 /*
  ,_,
@@ -7,39 +9,21 @@
 -"-"-
 */
 
-// CHAPTER 2: PROGRAM STRUCTURE
-
 // LOOPING A TRIANGLE
 
 // Code from the book. 
+
 /*
 for (let number = 0; number <= 12; number += 2) {
   console.log(number);
 }
 */
 
-// Testing
-/*
-for (let number = 0; number <= 10; number +=1) {
-  	console.log(number);
-}
-*/
-
-// Your code here.
 for (let hashtag = "#"; hashtag.length <= 7; hashtag += "#") {
   console.log(hashtag);
 }
 
-// ***
-
 // FIZZBUZZ
-
-// Prints numbers 0–100
-/*
-for (let number = 0; number <= 100; number += 1) {
-  console.log(number);
-}
-*/
 
 // Finds the first number greater than 20 that's also divisible by 7
 /*
