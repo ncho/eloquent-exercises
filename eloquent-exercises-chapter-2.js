@@ -26,6 +26,7 @@ for (let hashtag = "#"; hashtag.length <= 7; hashtag += "#") {
 // FIZZBUZZ
 
 // Finds the first number greater than 20 that's also divisible by 7
+
 /*
 for (let current = 20; ; current = current + 1) {
   if (current % 7 == 0) {
@@ -36,6 +37,7 @@ for (let current = 20; ; current = current + 1) {
 */
 
 // Exercise code part 1
+
 for (let number = 1; number <= 100; number += 1) {
   if (number % 3 == 0) {
     console.log("Fizz");
@@ -47,6 +49,7 @@ for (let number = 1; number <= 100; number += 1) {
 }
 
 // Exercise code part 2
+
 for (let number = 1; number <= 100; number += 1) {
   if (number % 3 == 0 && number % 5 == 0) {
     console.log("FizzBuzz");
@@ -61,6 +64,7 @@ for (let number = 1; number <= 100; number += 1) {
 }
 
 // Online exercise solution
+
 for (let n = 1; n <= 100; n++) {
   let output = "";
   if (n % 3 == 0) output += "Fizz";
@@ -69,11 +73,11 @@ for (let n = 1; n <= 100; n++) {
 }
 
 // Had a difficult time understanding how to use || to my advantage
+
 // Didn't think to create a variable separate from number
 
-// ***
-
 // CHESSBOARD
+
 console.log(" " + "#");
 
 for (let n = 1; n <= 64; n++) {
@@ -198,13 +202,18 @@ console.log(string);
 console.log(string.length);
 
 // A loop inside of a loop
+
 // Line by line, left to right, top to bottom
+
 // Two bindings to track progress
+
 // To know whether to put a space or a hash sign at a given position, test whether the sum of the two counters is even (`% 2`)
+
 // Terminating a line by adding a newline character must happen after the line has been built up
 
 let bindingOne = "";
 let bindingTwo = "";
+
 if (bindingOne + bindingTwo % 2 == 0) 
 
 let string = "";
@@ -213,11 +222,14 @@ for (let counter = 1; counter <= 72; counter ++) {
   else if (counter % 2 == 0) string += "#";
   else string += " ";
 }
+
 console.log(string);
 
 
 // SOLUTION I CAME UP WITH IN THE PAST WORKING WITH KUNAL
+
 // I struggled with this exercise for a long time when working on it now
+
 // I should have just kept it as simple as possible
 
 var string = "";
@@ -227,6 +239,7 @@ for (var counter = 1; counter <= ((size + 1) * size); counter++) {
 	else if (counter % 2 == 0) string += "#";
 	else string += " ";
 }
+
 console.log(string);
 console.log(string.length);
 
