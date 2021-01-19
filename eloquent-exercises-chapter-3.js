@@ -39,5 +39,50 @@ min = (e, f) => {
 
 // RECURSION
 
+let h = a => a % 3;
 
+console.log(h(5));
 
+// → 2
+// 2 is the remainder of 5 / 3
+
+// Non-recursive solution
+function isEven(N) {
+	if (N % 2 == 0 && (N - 2) % 2 == 0) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+// Non-recursive solution
+function isEven(N) {
+	while (N % 2 == 0) {
+		return true;
+	} 
+  	return false;
+}
+
+// Non-recursive solution
+function isEven(N) {
+		if (N % 2 == 0) {
+			return true;
+		} else if (N % 2 == 1) {
+			return false;
+		} else {
+			return false;
+		}
+}
+
+// Recursive solution
+function isEven(N) {
+	if (N == 0) {
+		return true;
+	} else if (N == 1) {
+		return false;
+	} else {
+		return isEven(N - 2);
+	}
+}
+
+// Zero is even, one is odd, and for any other number: Subtract by 2 until either zero or one is reached
