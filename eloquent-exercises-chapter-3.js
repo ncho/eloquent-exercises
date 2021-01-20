@@ -85,4 +85,61 @@ function isEven(N) {
 	}
 }
 
-// Zero is even, one is odd, and for any other number: Subtract by 2 until either zero or one is reached
+// Zero is even, one is odd, and for any other number: 
+// Subtract by 2 until either zero or one is reached
+
+// ***
+
+// BEAN COUNTING
+
+// Count, history
+// Go along the length of a string
+// Checking if the character in each position is the character "B"
+// If character == "B", add number to history
+
+// Check the character using `"string"[N]`
+// Does returned value == "B"? 
+
+// Start from the end of the string?
+// `string.length - 1` to start from end, make this recursive until… 
+// `string.length - 1` < 0
+
+/*
+N = string.length - 1
+if "string"[N] == "B"
+count = count + 1
+Recurse, with the next character countBs(string - 1)
+return count
+*/
+
+function countBs(string) {
+	let counter = 0;
+	for (index = 0; index < string.length; index++) {
+
+		// If string[index] == "B", counter ++
+
+	}
+	return counter;
+}
+
+
+const counter = 0;
+
+function countBs(string) {
+	for (index = 0; index < string.length; index++) {	
+      	if (string[index] == "B") {
+			return counter++
+		} else {
+          return counter;
+		}
+    }
+}
+
+// Copy pasta
+function zeroPad(number, width) {
+  let string = String(number);
+  while (string.length < width) {
+    string = "0" + string;
+  }
+  return string;
+}
